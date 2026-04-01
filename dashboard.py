@@ -127,7 +127,14 @@ footer {{ visibility: hidden; }}
 # ── DB engine ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def get_engine():
-    return create_engine(get_connection_string())
+    return create_engine(
+        get_connection_string(),
+        pool_size=3,
+        max_overflow=2,
+        pool_timeout=30,
+        pool_recycle=1800,
+        pool_pre_ping=True,
+    )
 
 engine = get_engine()
 
