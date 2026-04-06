@@ -69,6 +69,18 @@ html, body, [class*="st-"], [data-testid], p, div, span:not(.material-symbols-ro
     -webkit-font-smoothing: antialiased !important;
     font-feature-settings: 'liga' 1 !important;
 }}
+[data-testid="stSidebarCollapseButton"] [data-testid="stIconMaterial"] {{
+    visibility: hidden !important;
+    font-size: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}}
+[data-testid="stExpandSidebarButton"] [data-testid="stIconMaterial"] {{
+    visibility: hidden !important;
+    font-size: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}}
 [data-testid="collapsedControl"] [data-testid="stIconMaterial"],
 [data-testid="baseButton-headerNoPadding"] [data-testid="stIconMaterial"] {{ font-size: 0 !important; }}
 [data-testid="collapsedControl"] [data-testid="stIconMaterial"]::after {{
@@ -317,7 +329,7 @@ with st.sidebar:
         <div>
             <div style='font-size:18px;font-weight:700;color:#fff;letter-spacing:-0.3px;line-height:1.2;'>LeisureHub</div>
             <div style='font-size:10px;color:#4a5568;font-weight:500;letter-spacing:0.5px;'>
-                ANALYTICS · DAMG 6210 · GROUP 6
+                ANALYTICS · DAMG 6210 · GROUP 7
             </div>
         </div>
     </div>""", unsafe_allow_html=True)

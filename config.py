@@ -20,7 +20,7 @@ def get_db_config():
         "port":     int(os.environ.get("DB_PORT", 1433)),
         "database": os.environ.get("DB_NAME", "LeisureHub"),
         "username": os.environ.get("DB_USER", "sa"),
-        "password": os.environ.get("DB_PASSWORD", ""),
+        "password": os.environ.get("DB_PASSWORD", "YourSTRONGPassword123"),
     }
 
 def get_connection_string():
